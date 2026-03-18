@@ -1,0 +1,168 @@
+IT Operations & Service Delivery
+Top Skills 
+ITIL-Based Incident & Change Management
+IT Project Management (PMP Certified)
+Multi-Branch IT Infrastructure Management
+Network Security & Firewall Configuration
+Inventory & Recipe Management Systems
+Active Directory & Identity Management
+IT Support Automation & Ticketing Systems
+Vendor Management 
+Restaurant POS Systems Administration
+ERP Implementation & Integration
+IT Operations Manager (PMP®, ITIL® Certified)
+Driving scalable restaurant IT ecosystems through POS optimization, ERP integration,
+and ITIL-governed service excellence.
+Phone no.: +966 532317529 (KSA) | +91 9072581257 (India)
+E-Mail: bubinkorahmathew@gmail.com
+Address: Riyadh, Saudi Arabia
+LinkedIn: https://www.linkedin.com/in/bubinkmathew
+BUBIN KORAH MATHEW
+Results-driven IT Operations Manager and Restaurant Technology Specialist with over 15 years of
+experience leading enterprise IT support, POS ecosystems, ERP platforms, and secure multi-branch
+infrastructure environments. Proven expertise in managing Foodics, Micros, NCR Aloha, and Odoo ERP
+systems while optimizing inventory, recipe management, and sales automation processes. PMP® and
+ITIL® V4 certified professional with strong capabilities in IT service delivery, project governance, and
+operational transformation. Demonstrated success in reducing downtime, strengthening network security,
+and implementing structured ticketing frameworks aligned with ITIL best practices. Adept at bridging
+restaurant operations with scalable technology solutions that enhance performance, compliance, and
+business continuity across distributed locations.
+Leadership Impact Highlights:
+Successfully led end-to-end IT operations for multi-branch restaurant environments, ensuring high POS
+availability and near-zero operational disruption.
+Designed and implemented a centralized IT ticketing system that improved incident tracking visibility
+and significantly reduced average resolution time.
+Spearheaded ERP and POS integrations that streamlined inventory control, recipe costing accuracy,
+and sales reporting efficiency.
+Strengthened network security posture by configuring enterprise-grade firewalls and enforcing
+structured access control policies across locations.
+Optimized sales automation and handheld terminal management systems, enhancing route efficiency
+and field sales productivity.
+Profile Summary
+Professional Work Experience
+Freelance IT Consultant – POS & ERP Specialist
+POS Expert Tech (Self-Employed) | Riyadh, Saudi Arabia |  Sep 2025 – Present | Hybrid
+Empowering retail and restaurant businesses through scalable POS, ERP, and technology solutions.
+Languages: English | Hindi | Arabic (Basic)
+Lead end-to-end IT operations across multiple restaurant branches, managing Foodics POS, Micros POS, and Odoo ERP to ensure seamless
+daily business continuity.
+Oversee POS configuration, system upgrades, and ERP integrations, maintaining high availability and performance across front-end and back-
+office platforms.
+Administer inventory control and recipe costing modules, improving data accuracy and enabling real-time visibility into food cost management.
+Implement ITIL-aligned service management workflows, standardizing incident, problem, and change management processes across all
+locations.
+Design and deploy a customized OpenTicket-based IT service desk system, enhancing ticket tracking transparency and reducing issue resolution
+turnaround time.
+Manage Google Workspace administration, including user lifecycle management, access control policies, and security compliance.
+Ensure consistent uptime of mission-critical systems by proactively monitoring network infrastructure, POS environments, and ERP applications.
+Maintain and support ZKTeco biometric attendance systems across branches, ensuring reliable workforce tracking and system integration.
+Coordinate with vendors and internal stakeholders to execute system enhancements, security updates, and infrastructure improvements without
+operational disruption.
+IT Support Manager (Restaurant IT Operations)
+Greens Leaves Food Co | Riyadh, Saudi Arabia |  May 2024 – Jul 2025
+Driving seamless multi-branch restaurant IT operations through POS, ERP, security, and ITIL-based service excellence.
+Provide freelance IT consulting services specializing in POS systems, ERP solutions, and digital transformation for small and medium-sized retail
+and restaurant businesses.
+Lead end-to-end POS installation, configuration, system migration, troubleshooting, and user training to ensure smooth operational deployment.
+Implement and customize Odoo ERP modules, optimizing inventory management, sales workflows, and financial reporting processes.
+Deliver technical advisory services for restaurant and retail technology infrastructure, improving operational efficiency and system reliability.
+Perform system diagnostics, upgrades, and performance optimization to enhance business continuity and reduce downtime.
+Support clients with IT infrastructure planning, network setup, and secure access management.
+Valid Saudi & Indian Driving License | Iqama Valid Until Jan 2027
+Key Projects
+Ticketing System Implementation
+Designed and deployed a customized IT ticketing solution using OpenTicket.
+Standardized incident management and service tracking processes.
+Odoo ERP Deployment
+Installed and configured Odoo Community modules for training and
+business simulation environments.
+Integrated inventory and sales modules for workflow automation.
+Senior IT Support / IT Infrastructure Lead
+Bazbaza International Trading Co | Riyadh, Saudi Arabia |  Aug 2007 – Feb 2021
+Strengthened multi-branch IT infrastructure and POS ecosystems through secure network management and operational excellence.
+Managed enterprise-wide IT infrastructure including servers, LAN/WAN networks, and multi-branch connectivity, ensuring stable and secure
+business operations.
+Administered and maintained NCR Aloha POS systems across restaurant locations, overseeing configuration, upgrades, and system
+performance optimization.
+Configured and managed Palo Alto firewalls, strengthening network security posture and enforcing structured access control policies.
+Led advanced POS troubleshooting, database administration, and system performance tuning to minimize downtime and improve transaction
+reliability.
+Oversaw IP telephony systems, ensuring seamless internal and external communication across departments and branches.
+Managed IT hardware lifecycle processes including procurement, deployment, maintenance, and asset tracking to maintain operational
+efficiency.
+IT Systems Administration & Support Specialist
+Pure Beverages Industrial Co | Riyadh, Saudi Arabia | Oct 2021 – Nov 2022
+Enhanced enterprise sales operations through secure systems administration, mobility management, and optimized route automation.
+Administered and maintained Microsoft Office 365 and Active Directory environments, ensuring secure user access, policy enforcement, and
+seamless collaboration across departments.
+Managed RoutePro Sales Automation platform, overseeing route creation, territory mapping, and optimization to enhance field sales efficiency.
+Configured, deployed, and supported handheld terminals (HHT) using SOTI MobiControl, ensuring reliable mobile device performance for
+distribution teams.
+Provided end-to-end infrastructure and network support for sales and logistics operations, maintaining system stability and connectivity.
+Implemented user access controls and security best practices to safeguard enterprise data and ensure compliance with internal IT policies.
+Troubleshot hardware, software, and network-related issues, minimizing operational disruptions and improving service responsiveness.
+IT Application Maintenance & POS Specialist
+Aknah Infotech | Riyadh, Saudi Arabia |  Jan 2023 – Apr 2024
+Optimized restaurant POS and ERP systems to enhance operational efficiency and minimize downtime.
+Managed end-to-end POS application maintenance for restaurant clients, ensuring stable system performance and uninterrupted daily
+operations.
+Configured, deployed, and supported ERP and Van Sales systems, streamlining sales workflows and improving overall operational efficiency.
+Delivered advanced L2/L3 technical support by diagnosing and resolving complex application, database, and integration issues, minimizing
+downtime.
+Administered POS configurations including user roles, pricing structures, tax settings, and reporting modules to maintain transactional accuracy
+and compliance.
+Integrated POS platforms with back-office systems, enhancing data synchronization, inventory tracking, and financial reporting processes.
+Collaborated with restaurant management teams and third-party vendors to implement system upgrades, patches, and performance
+enhancements aligned with business needs.
+Education & Professional Details 
+Bachelor of Science (B.Sc.) in Information Technology
+IEC University | 2013 – 2015
+Diploma in Computer Hardware & Networking
+Luna Institute of Engineering Technology | 2000 – 2003
+Certification Details
+Project Management Professional (PMP®)
+Project Management Institute (PMI) | 2025
+ITIL® V4 Foundation
+PeopleCert | 2025
+Python Programming Certification
+ICTRD | 2025
+ Operational Excellence & Business Impact
+Enhanced multi-branch restaurant operational efficiency by implementing POS automation and ERP-driven workflow improvements.
+Strengthened IT governance by aligning service delivery processes with ITIL best practices, improving incident control and service consistency.
+Improved management decision-making by optimizing sales, inventory, and reporting dashboards for real-time business visibility.
+Reduced operational disruptions through proactive system monitoring and structured IT service management frameworks.
+Streamlined cross-functional coordination between IT and restaurant operations, improving service reliability and performance outcomes.
+BUBIN KORAH MATHEW
+Signature
+Technical & Technologies Used
+Foodics POS | Micros POS | NCR Aloha | POS Deployment & Configuration | Recipe Costing Modules | Inventory
+Management Systems
+Odoo ERP (Community) | Van Sales Systems | RoutePro Sales Automation | ERP Implementation | ERP Integration &
+Customization
+Windows Server | Active Directory | Microsoft 365 | Google Workspace | File & Print Services | User Access Management
+Palo Alto Firewalls | Fortinet Firewalls | LAN/WAN Configuration | VPN & Remote Access | Network Monitoring | Endpoint
+Security
+ITIL Framework | Incident & Problem Management | Change Management | OpenTicket Service Desk | SLA Monitoring | IT
+Support Operations
+Windows OS | Ubuntu Linux
+Python (Automation & Scripting)
+Leadership Development
+Cross-Functional Team Management
+Performance & Accountability Management
+Effective Communication 
+Cross-functional Collaboration 
+Relationship Building
+Data Interpretation 
+Decision Making
+Solution Development 
+Team Leadership & Management
+Communication & Collaboration
+Analytical and Problem-Solving
+Management Skills
+Programming & Automation
+POS & Restaurant Systems
+ERP & Business Applications
+IT Infrastructure & Systems
+Networking & Security
+IT Service Management
+Operating Systems & Platforms

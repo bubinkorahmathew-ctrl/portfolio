@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 
 <body>
@@ -195,115 +197,11 @@
                 <h2>Key Projects</h2>
                 <p>Live deployments, implementations & digital solutions I've built</p>
             </div>
-            <div class="projects-grid">
-
-                <!-- Project 1: Nishad CV Portfolio -->
-                <div class="project-card glass-card hover-lift slide-up">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-user-tie"></i></div>
-                        <div class="project-badge live"><span class="live-dot"></span> Live</div>
-                    </div>
-                    <h3>Senior Accounts Manager Portfolio</h3>
-                    <p class="project-desc">A professional portfolio for Nishad Kottakaranmuriyil, a Senior Accounts Manager with 17+ years of experience in financial analysis, ZATCA e-invoicing, and VAT management in Saudi Arabia.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">Vercel</span>
-                        <span class="tag">SAP FICO</span>
-                        <span class="tag">Finance</span>
-                    </div>
-                    <a href="https://nishadcv-354l.vercel.app/" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> View Project
-                    </a>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be injected here via script.js -->
+                <div class="loading-spinner">
+                    <i class="fas fa-circle-notch fa-spin"></i> Loading Projects...
                 </div>
-
-                <!-- Project 2: Linu John Portfolio -->
-                <div class="project-card glass-card hover-lift slide-up">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-boxes"></i></div>
-                        <div class="project-badge live"><span class="live-dot"></span> Live</div>
-                    </div>
-                    <h3>Supply Chain Specialist Portfolio</h3>
-                    <p class="project-desc">Portfolio for Linu John, a Warehouse & Procurement specialist. Features a dark mode toggle, interactive experience timeline, skills showcase, and downloadable resume — deployed on Netlify.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML/CSS/JS</span>
-                        <span class="tag">Netlify</span>
-                        <span class="tag">SAP B1</span>
-                        <span class="tag">Dark Mode</span>
-                    </div>
-                    <a href="https://poetic-starburst-dcf1cc.netlify.app/" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> View Project
-                    </a>
-                </div>
-
-                <!-- Project 3: POS Expert Tech -->
-                <div class="project-card glass-card hover-lift slide-up">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-cash-register"></i></div>
-                        <div class="project-badge live"><span class="live-dot"></span> Live</div>
-                    </div>
-                    <h3>POS Expert Tech — Business Website</h3>
-                    <p class="project-desc">A full business website for POS Expert Tech offering POS systems, custom ERP implementations, and ZATCA Phase 2 E-invoicing compliance solutions for SMEs across Saudi Arabia.</p>
-                    <div class="project-tags">
-                        <span class="tag">Odoo & ERPNext</span>
-                        <span class="tag">ZATCA</span>
-                        <span class="tag">Arabic/English</span>
-                        <span class="tag">SME Solutions</span>
-                    </div>
-                    <a href="https://posexpertech.com/" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> View Project
-                    </a>
-                </div>
-
-                <!-- Project 4: Sparkwings Enterprises -->
-                <div class="project-card glass-card hover-lift slide-up">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-rocket"></i></div>
-                        <div class="project-badge live"><span class="live-dot"></span> Live</div>
-                    </div>
-                    <h3>Sparkwings Enterprises — Business Solutions</h3>
-                    <p class="project-desc">Specialized ERP implementation and IT infrastructure support. Providing tailored solutions to streamline operations and ensure robust business backbone for modern enterprises.</p>
-                    <div class="project-tags">
-                        <span class="tag">ERP Implementation</span>
-                        <span class="tag">IT Infrastructure</span>
-                        <span class="tag">WordPress</span>
-                        <span class="tag">Support</span>
-                    </div>
-                    <a href="https://sparkwings.co.in/" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> View Project
-                    </a>
-                </div>
-
-                <!-- Project 5: POS Implementation -->
-                <div class="project-card glass-card hover-lift slide-up">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
-                        <div class="project-badge done">Delivered</div>
-                    </div>
-                    <h3>Multi-Branch POS Implementation</h3>
-                    <p class="project-desc">Deployed and configured a unified POS system across 3 restaurant branches in Riyadh, integrating kitchen printing & billing workflows and reducing billing time by 30%.</p>
-                    <div class="project-tags">
-                        <span class="tag">POS Systems</span>
-                        <span class="tag">Restaurant Tech</span>
-                        <span class="tag">KDS Integration</span>
-                    </div>
-                </div>
-
-                <!-- Project 6: Odoo ERP -->
-                <div class="project-card glass-card hover-lift slide-up">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-cogs"></i></div>
-                        <div class="project-badge done">Delivered</div>
-                    </div>
-                    <h3>Odoo ERP Deployment</h3>
-                    <p class="project-desc">Installed and configured Odoo Community modules for a retail operation, integrating inventory and sales modules for end-to-end workflow automation and streamlined reporting.</p>
-                    <div class="project-tags">
-                        <span class="tag">Odoo ERP</span>
-                        <span class="tag">Inventory</span>
-                        <span class="tag">Sales Module</span>
-                        <span class="tag">Automation</span>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -389,6 +287,7 @@
     </footer>
 
     <!-- Custom JS -->
+    <script src="js/config.js"></script>
     <script src="js/script.js"></script>
 </body>
 

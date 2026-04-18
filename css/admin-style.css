@@ -13,6 +13,28 @@
     display: none !important;
 }
 
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(30px, 30px) scale(1.05); }
+}
+
+@keyframes pulse-icon {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; text-shadow: 0 0 15px var(--accent-primary); }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    50% { transform: translateX(8px); }
+    75% { transform: translateX(-8px); }
+}
+
+.shake {
+    animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -32,22 +54,67 @@
 }
 
 .auth-card {
-    max-width: 400px;
+    max-width: 420px;
     width: 100%;
+    padding: 40px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .auth-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.auth-icon-circle {
+    width: 70px;
+    height: 70px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.auth-icon-circle i {
+    font-size: 1.8rem;
+    color: var(--accent-primary);
+}
+
+.pulse-icon {
+    animation: pulse-icon 2s infinite ease-in-out;
 }
 
 .auth-header h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #fff, var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .auth-header p {
     color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 .form-group {
@@ -77,6 +144,56 @@
 .form-group input:focus {
     outline: none;
     border-color: var(--accent-primary);
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.password-toggle:hover {
+    color: var(--accent-secondary);
+}
+
+.btn-loader {
+    margin-left: 10px;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.back-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-link:hover {
+    color: var(--accent-primary);
+    transform: translateX(-5px);
 }
 
 .error-msg {
@@ -84,6 +201,52 @@
     font-size: 0.85rem;
     margin-top: 15px;
     text-align: center;
+}
+
+/* Demo Login Box */
+.demo-login-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(14, 165, 233, 0.05);
+    border: 1px dashed rgba(14, 165, 233, 0.3);
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.demo-info {
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.demo-label {
+    font-weight: 600;
+    color: var(--accent-secondary);
+}
+
+.demo-info code {
+    background: rgba(15, 23, 42, 0.8);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#fill-demo {
+    background: rgba(14, 165, 233, 0.1);
+    border-color: rgba(14, 165, 233, 0.3);
+    color: var(--accent-secondary);
+}
+
+#fill-demo:hover {
+    background: var(--accent-secondary);
+    color: #0f172a;
 }
 
 /* Dashboard Layout */

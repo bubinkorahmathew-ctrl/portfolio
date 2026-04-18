@@ -1,5 +1,21 @@
 // Admin Portal Logic
 document.addEventListener('DOMContentLoaded', () => {
+    // Safety check for Supabase initialization
+    if (!supabase || SUPABASE_URL === 'YOUR_SUPABASE_URL') {
+        const authError = document.getElementById('auth-error');
+        if (authError) {
+            authError.innerHTML = `
+                <div style="background: rgba(239, 68, 68, 0.1); padding: 15px; border-radius: 8px; border: 1px solid var(--danger); margin-top: 20px;">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <strong>Configuration Missing:</strong> <br>
+                    Please update <code>js/config.js</code> with your Supabase URL and Anon Key.
+                </div>
+            `;
+        }
+        console.error('Supabase not configured. Check js/config.js');
+        return;
+    }
+    
     checkAuthState();
 });
 
@@ -7,12 +23,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const loginForm = document.getElementById('login-form');
 const authError = document.getElementById('auth-error');
+const loginSubmit = document.getElementById('login-submit');
+const togglePassword = document.getElementById('toggle-password');
+const passwordInput = document.getElementById('password');
+const fillDemoBtn = document.getElementById('fill-demo');
+
+// Handle Demo Login Filling
+if (fillDemoBtn) {
+    fillDemoBtn.addEventListener('click', () => {
+        document.getElementById('email').value = 'admin@example.com';
+        passwordInput.value = 'password';
+        
+        // Visual feedback
+        fillDemoBtn.innerHTML = '<i class="fas fa-check"></i> Credentials Filled!';
+        setTimeout(() => {
+            fillDemoBtn.innerHTML = '<i class="fas fa-magic"></i> Use Default Login';
+        }, 2000);
+    });
+}
+
+// Toggle Password Visibility
+if (togglePassword && passwordInput) {
+    togglePassword.addEventListener('click', () => {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        
+        // Update icon
+        const icon = togglePassword.querySelector('i');
+        icon.classList.toggle('fa-eye');
+        icon.classList.toggle('fa-eye-slash');
+    });
+}
 
 if (loginForm) {
     loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+        const password = passwordInput.value;
+        const authCard = document.querySelector('.auth-card');
+
+        // Set Loading State
+        setLoading(true);
+        authError.textContent = '';
+        authCard.classList.remove('shake');
 
         try {
             const { data, error } = await supabase.auth.signInWithPassword({
@@ -25,9 +78,36 @@ if (loginForm) {
             // Login success
             checkAuthState();
         } catch (err) {
-            authError.textContent = err.message;
+            // Error handling
+            authError.textContent = err.message || 'Invalid login credentials';
+            authCard.classList.add('shake');
+            
+            // Clear password on error
+            passwordInput.value = '';
+            
+            // Log for debugging
+            console.error('Login error:', err);
+        } finally {
+            setLoading(false);
         }
     });
+}
+
+function setLoading(isLoading) {
+    if (!loginSubmit) return;
+    
+    const btnText = loginSubmit.querySelector('.btn-text');
+    const btnLoader = loginSubmit.querySelector('.btn-loader');
+    
+    if (isLoading) {
+        loginSubmit.disabled = true;
+        btnText.classList.add('hidden');
+        btnLoader.classList.remove('hidden');
+    } else {
+        loginSubmit.disabled = false;
+        btnText.classList.remove('hidden');
+        btnLoader.classList.add('hidden');
+    }
 }
 
 const logoutBtn = document.getElementById('logout-btn');
@@ -89,7 +169,16 @@ async function loadAdminProjects() {
             grid.appendChild(card);
         });
     } catch (err) {
-        grid.innerHTML = `<p class="error-msg">${err.message}</p>`;
+        console.error('Error loading admin projects:', err);
+        let errorMsg = err.message;
+        
+        if (errorMsg.includes('relation "projects" does not exist')) {
+            errorMsg = "Database table 'projects' missing. Please run setup SQL.";
+        } else if (err.code === 'PGRST301') {
+            errorMsg = "Permission denied. Check RLS policies.";
+        }
+
+        grid.innerHTML = `<p class="error-msg">${errorMsg}</p>`;
     }
 }
 

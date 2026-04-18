@@ -3,4 +3,8 @@
 const SUPABASE_URL = 'YOUR_SUPABASE_URL';
 const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
 
-const supabase = typeof supabase !== 'undefined' ? supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+// Initialize the Supabase client
+// We use window.supabase to distinguish between the library and our client instance
+const supabase = (typeof window !== 'undefined' && window.supabase) 
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) 
+    : null;

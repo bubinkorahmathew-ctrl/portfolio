@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubin Korah Mathew | IT Operations & Restaurant Tech Specialist</title>
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Portfolio of Bubin Korah Mathew, IT Operations Manager and Restaurant Technology Specialist with 15+ years of experience in POS, ERP, and Network Security.">
+    <meta name="description" content="Portfolio of Bubin Korah Mathew, IT Operations Manager and Restaurant Technology Specialist with 15+ years of experience in POS, ERP, and Network Security.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -21,17 +17,14 @@
     <!-- Supabase CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
-
 <body>
-    <!-- Background Effects -->
-    <div class="bg-shape shape-1"></div>
-    <div class="bg-shape shape-2"></div>
-    <div class="bg-shape shape-3"></div>
-
     <!-- Navigation -->
     <header id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">BKM<span>.</span></a>
+            <a href="#home" class="logo">
+                <div class="logo-circle">B</div>
+                Bubin<span style="color: var(--accent-primary);">.</span>
+            </a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -40,11 +33,12 @@
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-links">Home</a></li>
+                    <li><a href="#services" class="nav-links">Services</a></li>
                     <li><a href="#about" class="nav-links">About</a></li>
                     <li><a href="#experience" class="nav-links">Experience</a></li>
-                    <li><a href="#skills" class="nav-links">Skills</a></li>
+                    <li><a href="#certifications" class="nav-links">Qualifications</a></li>
                     <li><a href="#projects" class="nav-links">Projects</a></li>
-                    <li><a href="#contact" class="nav-links btn-outline">Contact</a></li>
+                    <li><a href="#contact" class="nav-links btn-outline">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,159 +47,274 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero section">
-            <div class="hero-content fade-in">
-                <h2 class="subtitle">Hello, I'm</h2>
-                <h1 class="title">Bubin Korah Mathew</h1>
-                <h3 class="role" style="font-size: 1.5rem;">IT Support Specialist | ERP (Odoo & ERPNext) Consultant |
-                    12+ Years in Retail, POS & Inventory Systems | Riyadh, Saudi Arabia</h3>
-                <p class="description">
-                    Empowering retail and restaurant businesses through scalable POS ecosystems,
-                    ERP platforms, and ZATCA-compliant infrastructure environments.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="Bubin_Korah_Mathew_CV.pdf" download="Bubin_Korah_Mathew_CV.pdf" class="btn btn-secondary">
-                        <i class="fas fa-file-download"></i> Download CV
-                    </a>
-                    <a href="https://wa.me/966532317529" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Me
-                    </a>
+            <div class="hero-grid">
+                <div class="hero-text fade-in">
+                    <div class="hello-tag">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                        Hello There!
+                    </div>
+                    <h1 class="title">
+                        I'm <span class="highlight-yellow">Bubin Korah,</span><br>
+                        IT Operations Specialist<br>
+                        Based in KSA.
+                    </h1>
+                    <p class="description">
+                        I'm an experienced IT Support Specialist & ERP Consultant with 12+ years in the field, collaborating with retail, FMCG, and restaurant businesses.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Portfolio <span class="icon-circle"><i class="fas fa-play"></i></span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image slide-up">
+                    <div class="blob-bg"></div>
+                    <div class="portrait">
+                        <img src="images/profile_nobg.png" alt="Bubin Korah Portrait">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <div class="badge-inner">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>HIRE ME</span>
+                        </div>
+                    </div>
+                    <div class="floating-tag tag-1">ERP Consultant</div>
+                    <div class="floating-tag tag-2">POS Specialist</div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about section">
-            <div class="section-title slide-up">
-                <h2>About Me</h2>
+        <!-- Marquee Section -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>IT Support</span> <i class="fas fa-asterisk"></i>
+                <span>ERP Consultant</span> <i class="fas fa-asterisk"></i>
+                <span>POS Systems</span> <i class="fas fa-asterisk"></i>
+                <span>ZATCA Specialist</span> <i class="fas fa-asterisk"></i>
+                <span>Odoo Integration</span> <i class="fas fa-asterisk"></i>
+                <span>IT Support</span> <i class="fas fa-asterisk"></i>
+                <span>ERP Consultant</span> <i class="fas fa-asterisk"></i>
+                <span>POS Systems</span> <i class="fas fa-asterisk"></i>
             </div>
-            <div class="glass-card slide-up">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I am an IT Support Specialist with 12+ years of experience in POS systems, ERP
-                            implementation, and retail IT operations in Saudi Arabia. I specialize in Odoo, ERPNext, and
-                            ZATCA-compliant billing solutions.</p>
+        </div>
 
-                        <h4 style="margin-top: 15px; margin-bottom: 10px; color: var(--text-main);">Experience
-                            Highlights</h4>
-                        <ul
-                            style="list-style-type: none; padding-left: 0; color: var(--text-muted); margin-bottom: 20px;">
-                            <li style="margin-bottom: 8px;"><i class="fas fa-check-circle"
-                                    style="color: var(--accent-primary); margin-right: 8px;"></i> 12+ years experience
-                            </li>
-                            <li style="margin-bottom: 8px;"><i class="fas fa-check-circle"
-                                    style="color: var(--accent-primary); margin-right: 8px;"></i> FMCG / Retail /
-                                Restaurant</li>
-                            <li style="margin-bottom: 8px;"><i class="fas fa-check-circle"
-                                    style="color: var(--accent-primary); margin-right: 8px;"></i> POS deployment &
-                                troubleshooting</li>
-                            <li style="margin-bottom: 8px;"><i class="fas fa-check-circle"
-                                    style="color: var(--accent-primary); margin-right: 8px;"></i> ERP implementation
-                            </li>
-                        </ul>
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="section-header fade-in">
+                <div class="header-subtitle">- Services</div>
+                <div class="header-title">
+                    <h2><span class="highlight-yellow">Services</span> I Provide</h2>
+                    <a href="#experience" class="btn btn-dark">View All Services <span class="icon-circle-small"><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+            
+            <div class="services-grid slide-up">
+                <div class="service-card light-card">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>ERP Implementation</h3>
+                    <p>End-to-end setup and customization of Odoo & ERPNext for retail and restaurant operations.</p>
+                    <a href="#" class="learn-more">Learn more &rarr;</a>
+                </div>
+                <div class="service-card light-card">
+                    <div class="service-icon"><i class="fas fa-cash-register"></i></div>
+                    <h3>POS Systems & ZATCA</h3>
+                    <p>Deployment of scalable POS ecosystems and ZATCA-compliant e-invoicing solutions.</p>
+                    <a href="#" class="learn-more">Learn more &rarr;</a>
+                </div>
+                <div class="service-card light-card">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>IT Infrastructure</h3>
+                    <p>L1/L2 support, networking, firewall configuration, and complete operational maintenance.</p>
+                    <a href="#" class="learn-more">Learn more &rarr;</a>
+                </div>
+            </div>
+        </section>
 
-                        <div class="cert-badges">
-                            <span class="badge"><i class="fas fa-certificate"></i> PMP® Certified</span>
-                            <span class="badge"><i class="fas fa-certificate"></i> ITIL® V4 Foundation</span>
-                            <span class="badge"><i class="fas fa-certificate"></i> Python Programming</span>
-                            <span class="badge"><i class="fas fa-graduation-cap"></i> B.Sc. IT</span>
+        <!-- About Me Section -->
+        <section id="about" class="about section dark-section">
+            <div class="about-grid">
+                <div class="about-image slide-up">
+                    <div class="blob-bg-yellow"></div>
+                    <div class="portrait">
+                         <img src="images/profile_nobg.png" alt="Bubin Korah Portrait">
+                    </div>
+                    <div class="floating-pill pill-1">Odoo ERP</div>
+                    <div class="floating-pill pill-2">ERPNext</div>
+                    <div class="floating-pill pill-3">POS Systems</div>
+                    <div class="floating-pill pill-4">ZATCA</div>
+                </div>
+                <div class="about-text fade-in">
+                    <div class="header-subtitle yellow-text">- About Me</div>
+                    <h2 class="light-title">Who is <span class="highlight-yellow">Bubin Korah?</span></h2>
+                    <p class="description-light">
+                        I am an IT Support Specialist and ERP Consultant with over 12 years of experience in POS systems, ERP implementation, and retail IT operations across Saudi Arabia. I specialize in empowering retail businesses through scalable technology solutions.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>12+</h3>
+                            <p>Years of Experience</p>
                         </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>ERP Implementations</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>POS Deployments</p>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="Bubin_Korah_Mathew_CV.pdf" download class="btn btn-outline-yellow">
+                            Download CV <span class="icon-circle-yellow"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <div class="signature" style="font-family: 'Outfit'; font-size: 1.5rem; color: var(--accent-primary);">Bubin Korah</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience section">
-            <div class="section-title slide-up">
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience section" style="background: var(--bg-main);">
+            <div class="section-title slide-up text-center">
                 <h2>Work Experience</h2>
             </div>
             <div class="timeline">
-
                 <div class="timeline-item slide-up">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content light-card">
                         <div class="timeline-header">
                             <h3>Freelance IT Consultant – POS & ERP Specialist</h3>
                             <span class="timeline-date">Sep 2025 – Present</span>
                         </div>
                         <h4 class="company">POS Expert Tech | Riyadh, Saudi Arabia</h4>
-                        <p>Empowering retail and restaurant businesses through scalable POS, ERP, and technology
-                            solutions. Implementing Odoo modules, OpenTicket service desk ecosystems, and ZKTeco
-                            integrations.</p>
+                        <p>Empowering retail and restaurant businesses through scalable POS, ERP, and technology solutions. Implementing Odoo modules, OpenTicket service desk ecosystems, and ZKTeco integrations.</p>
                     </div>
                 </div>
-
                 <div class="timeline-item slide-up">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content light-card">
                         <div class="timeline-header">
                             <h3>IT Support Manager</h3>
                             <span class="timeline-date">May 2024 – Jul 2025</span>
                         </div>
                         <h4 class="company">Greens Leaves Food Co | Riyadh</h4>
-                        <p>Drove seamless multi-branch restaurant IT operations through POS, ERP, security, and
-                            ITIL-based service excellence. Designed customized OpenTicket solution reducing incident
-                            resolution time.</p>
+                        <p>Drove seamless multi-branch restaurant IT operations through POS, ERP, security, and ITIL-based service excellence.</p>
                     </div>
                 </div>
-
                 <div class="timeline-item slide-up">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content light-card">
                         <div class="timeline-header">
                             <h3>IT Application Maintenance & POS Specialist</h3>
                             <span class="timeline-date">Jan 2023 – Apr 2024</span>
                         </div>
                         <h4 class="company">Aknah Infotech | Riyadh</h4>
-                        <p>Optimized restaurant POS and ERP systems to enhance operational efficiency. Delivered
-                            advanced L2/L3 support for database and integration issues.</p>
+                        <p>Optimized restaurant POS and ERP systems to enhance operational efficiency. Delivered advanced L2/L3 support for database and integration issues.</p>
                     </div>
                 </div>
-
                 <div class="timeline-item slide-up">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <div class="timeline-header">
-                            <h3>IT Systems Admin & Support Specialist</h3>
-                            <span class="timeline-date">Oct 2021 – Nov 2022</span>
-                        </div>
-                        <h4 class="company">Pure Beverages Industrial Co | Riyadh</h4>
-                        <p>Administered MS Office 365, Active Directory, and RoutePro Sales Automation platforms
-                            enhancing route optimization for field sales.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item slide-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content light-card">
                         <div class="timeline-header">
                             <h3>Senior IT Support / Infrastructure Lead</h3>
                             <span class="timeline-date">Aug 2007 – Feb 2021</span>
                         </div>
                         <h4 class="company">Bazbaza International Trading Co | Riyadh</h4>
-                        <p>Managed enterprise-wide IT infrastructure. Administered NCR Aloha POS systems, configured
-                            Palo Alto firewalls, and managed multi-branch secure networking.</p>
+                        <p>Managed enterprise-wide IT infrastructure. Administered NCR Aloha POS systems, configured Palo Alto firewalls, and managed multi-branch secure networking.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Qualifications Section -->
+        <section id="certifications" class="certifications section">
+            <div class="section-title slide-up text-center">
+                <div class="header-subtitle">- Qualifications</div>
+                <h2>Education & Certifications</h2>
+            </div>
+            
+            <div class="qualifications-container slide-up">
+                <!-- Column 1: Academic -->
+                <div class="qual-column">
+                    <h3 class="qual-heading"><i class="fas fa-graduation-cap"></i> Academic Degrees</h3>
+                    <div class="qual-grid-1">
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fas fa-university"></i></div>
+                            <h3>BSc Information Technology</h3>
+                            <p>IEC University, India<br><strong style="color: var(--accent-primary);">Degree</strong></p>
+                        </div>
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>Diploma in Computer Hardware & Networking</h3>
+                            <p>Luna Institute of Engineering<br><strong style="color: var(--accent-primary);">2003</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Certifications -->
+                <div class="qual-column">
+                    <h3 class="qual-heading"><i class="fas fa-certificate"></i> Professional Certifications</h3>
+                    <div class="qual-grid-2">
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
+                            <h3>Project Management Professional (PMP®)</h3>
+                            <p>Project Management Institute (PMI)<br><strong style="color: var(--accent-primary);">2025</strong></p>
+                        </div>
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fas fa-server"></i></div>
+                            <h3>ITIL® V4 Foundation</h3>
+                            <p>PeopleCert<br><strong style="color: var(--accent-primary);">2025</strong></p>
+                        </div>
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fab fa-python"></i></div>
+                            <h3>Python Programming</h3>
+                            <p>ICTRD<br><strong style="color: var(--accent-primary);">2025</strong></p>
+                        </div>
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                            <h3>Odoo 19 Certified</h3>
+                            <p>Odoo S.A.<br><strong style="color: var(--accent-primary);">2026</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tools Section -->
+        <section class="tools section text-center" style="background: var(--bg-card); padding: 80px 20px;">
+            <div class="section-title slide-up" style="margin-bottom: 40px;">
+                <div class="header-subtitle">- My Favorite Tools</div>
+                <h2 style="font-size: 2.5rem; margin-top: 10px;"><span class="highlight-yellow">Exploring the Tools</span><br>Behind My Work</h2>
+            </div>
+            <div class="tools-grid slide-up" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <div class="tool-circle"><i class="fab fa-python" style="color: #3776AB;"></i></div>
+                <div class="tool-circle"><i class="fas fa-server" style="color: #6C757D;"></i></div>
+                <div class="tool-circle"><i class="fas fa-cash-register" style="color: #198754;"></i></div>
+                <div class="tool-circle"><i class="fab fa-windows" style="color: #0078D6;"></i></div>
+                <div class="tool-circle"><i class="fas fa-network-wired" style="color: #DC3545;"></i></div>
+            </div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects" class="projects-section section">
-            <div class="section-title slide-up">
+            <div class="section-title slide-up text-center">
                 <h2>Key Projects</h2>
                 <p>Live deployments, implementations & digital solutions I've built</p>
             </div>
             <div class="projects-grid" id="projects-container">
+
                 <!-- Project 1: Nishad CV -->
-                <div class="project-card glass-card hover-lift slide-up">
+                <div class="project-card light-card hover-lift slide-up">
                     <div class="project-card-header">
                         <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
                         <div class="project-badge live"><span class="live-dot"></span> Live</div>
                     </div>
                     <h3>Nishad CV - Senior Accounts Manager</h3>
-                    <p class="project-desc">A professional digital CV showcasing 17+ years of financial expertise, VAT management, and ZATCA e-invoicing.</p>
+                    <p class="project-desc">A professional digital CV showcasing 17+ years of financial expertise, VAT
+                        management, and ZATCA e-invoicing.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
@@ -217,13 +326,14 @@
                 </div>
 
                 <!-- Project 2: Linu John -->
-                <div class="project-card glass-card hover-lift slide-up">
+                <div class="project-card light-card hover-lift slide-up">
                     <div class="project-card-header">
                         <div class="project-icon"><i class="fas fa-warehouse"></i></div>
                         <div class="project-badge live"><span class="live-dot"></span> Live</div>
                     </div>
                     <h3>Linu John - Supply Chain Portfolio</h3>
-                    <p class="project-desc">Sophisticated portfolio specializing in warehouse management, SAP Business One, and inventory control efficiency.</p>
+                    <p class="project-desc">Sophisticated portfolio specializing in warehouse management, SAP Business
+                        One, and inventory control efficiency.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
@@ -235,13 +345,14 @@
                 </div>
 
                 <!-- Project 3: POS Expert -->
-                <div class="project-card glass-card hover-lift slide-up">
+                <div class="project-card light-card hover-lift slide-up">
                     <div class="project-card-header">
                         <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
                         <div class="project-badge live"><span class="live-dot"></span> Live</div>
                     </div>
                     <h3>POS Expert - IT & ERP Solutions</h3>
-                    <p class="project-desc">Leading IT solutions provider specializing in custom ERP implementations and point-of-sale systems in Saudi Arabia.</p>
+                    <p class="project-desc">Leading IT solutions provider specializing in custom ERP implementations and
+                        point-of-sale systems in Saudi Arabia.</p>
                     <div class="project-tags">
                         <span class="tag">ERP</span>
                         <span class="tag">POS</span>
@@ -253,13 +364,14 @@
                 </div>
 
                 <!-- Project 4: Sparkwings -->
-                <div class="project-card glass-card hover-lift slide-up">
+                <div class="project-card light-card hover-lift slide-up">
                     <div class="project-card-header">
                         <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
                         <div class="project-badge live"><span class="live-dot"></span> Live</div>
                     </div>
                     <h3>Sparkwings Enterprises - Security</h3>
-                    <p class="project-desc">Comprehensive IT and security provider offering tailored ERP systems, web development, and robust infrastructure.</p>
+                    <p class="project-desc">Comprehensive IT and security provider offering tailored ERP systems, web
+                        development, and robust infrastructure.</p>
                     <div class="project-tags">
                         <span class="tag">IT Solutions</span>
                         <span class="tag">Security</span>
@@ -271,13 +383,15 @@
                 </div>
 
                 <!-- Project 5: Multi-branch Restaurant POS -->
-                <div class="project-card glass-card hover-lift slide-up">
+                <div class="project-card light-card hover-lift slide-up">
                     <div class="project-card-header">
                         <div class="project-icon"><i class="fas fa-utensils"></i></div>
                         <div class="project-badge live"><span class="live-dot"></span> Live</div>
                     </div>
                     <h3>Multi-branch Restaurant POS Implementation</h3>
-                    <p class="project-desc">End-to-end deployment of centralized POS ecosystems across multiple locations, optimizing order flow and real-time inventory tracking for high-volume operations.</p>
+                    <p class="project-desc">End-to-end deployment of centralized POS ecosystems across multiple
+                        locations, optimizing order flow and real-time inventory tracking for high-volume operations.
+                    </p>
                     <div class="project-tags">
                         <span class="tag">POS Systems</span>
                         <span class="tag">Networking</span>
@@ -289,13 +403,14 @@
                 </div>
 
                 <!-- Project 6: Odoo ERP Community -->
-                <div class="project-card glass-card hover-lift slide-up">
+                <div class="project-card light-card hover-lift slide-up">
                     <div class="project-card-header">
                         <div class="project-icon"><i class="fas fa-cogs"></i></div>
                         <div class="project-badge live"><span class="live-dot"></span> Live</div>
                     </div>
                     <h3>Odoo ERP Community Implementation</h3>
-                    <p class="project-desc">Customized Odoo ERP deployment for retail and FMCG sectors, focusing on Accounting, HR, and Supply Chain automation to streamline business processes.</p>
+                    <p class="project-desc">Customized Odoo ERP deployment for retail and FMCG sectors, focusing on
+                        Accounting, HR, and Supply Chain automation to streamline business processes.</p>
                     <div class="project-tags">
                         <span class="tag">Odoo</span>
                         <span class="tag">Python</span>
@@ -305,93 +420,87 @@
                         <i class="fas fa-info-circle"></i> Solutions Architect
                     </a>
                 </div>
+
+                <!-- Project 7: Samku International -->
+                <div class="project-card light-card hover-lift slide-up">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-globe"></i></div>
+                        <div class="project-badge live"><span class="live-dot"></span> Live</div>
+                    </div>
+                    <h3>Samku International</h3>
+                    <p class="project-desc"><strong>Role: Lead IT & Web Developer</strong><br>Developed a comprehensive corporate website (bilingual). Managed complete IT infrastructure setup including domain registration and Google Workspace email hosting. Integrated interactive elements including WhatsApp business connectivity and an automated chatbot for customer service. Also handled hosting setup and social media integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">Web Development</span>
+                        <span class="tag">IT Infrastructure</span>
+                        <span class="tag">Google Workspace</span>
+                    </div>
+                    <a href="https://samkume.com/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </a>
+                </div>
+
+                <!-- Project 8: Eastern International -->
+                <div class="project-card light-card hover-lift slide-up">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-server"></i></div>
+                        <div class="project-badge done">Completed</div>
+                    </div>
+                    <h3>Eastern International</h3>
+                    <p class="project-desc"><strong>Role: IT Infrastructure Specialist</strong><br>Managed end-to-end digital infrastructure deployment, including registering a new business domain and configuring secure, professional email hosting through Google Workspace.</p>
+                    <div class="project-tags">
+                        <span class="tag">Domain Registration</span>
+                        <span class="tag">Email Hosting</span>
+                        <span class="tag">Google Workspace</span>
+                    </div>
+                </div>
+
+                <!-- Project 9: Sama Real Estate -->
+                <div class="project-card light-card hover-lift slide-up">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-building"></i></div>
+                        <div class="project-badge done">Completed</div>
+                    </div>
+                    <h3>Sama Musqat Real Estate</h3>
+                    <p class="project-desc"><strong>Role: IT Infrastructure Specialist</strong><br>Handled the digital foundation for a real estate client by executing domain registration and setting up reliable, secure professional email hosting.</p>
+                    <div class="project-tags">
+                        <span class="tag">IT Infrastructure</span>
+                        <span class="tag">Domain Setup</span>
+                        <span class="tag">Email Hosting</span>
+                    </div>
+                </div>
+            
             </div>
         </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills section">
-            <div class="section-title slide-up">
-                <h2>Technical Toolkit</h2>
-            </div>
-            <div class="skills-container slide-up">
-                <div class="skill-category glass-card hover-lift">
-                    <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <h3>ERP Systems</h3>
-                    <ul>
-                        <li>Odoo ERP</li>
-                        <li>ERPNext</li>
-                        <li>Inventory Management</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category glass-card hover-lift">
-                    <div class="skill-icon"><i class="fas fa-cash-register"></i></div>
-                    <h3>Point of Sale & Retail</h3>
-                    <ul>
-                        <li>POS Systems</li>
-                        <li>ZATCA Integration</li>
-                        <li>Kitchen Printing & Billing</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category glass-card hover-lift">
-                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Infrastructure & IT</h3>
-                    <ul>
-                        <li>IT Support (L1 / L2)</li>
-                        <li>Networking</li>
-                        <li>Hardware Troubleshooting</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- Contact Section -->
-        <section id="contact" class="contact section">
+        <section id="contact" class="contact section text-center" style="background: var(--bg-card);">
             <div class="section-title slide-up">
                 <h2>Get In Touch</h2>
                 <p>Looking for an experienced IT Operations Manager? Let's connect.</p>
             </div>
             <div class="contact-grid slide-up">
-                <a href="mailto:bubinkorahmathew@gmail.com" class="contact-card glass-card hover-glow">
+                <a href="mailto:bubinkorahmathew@gmail.com" class="contact-card light-card hover-lift">
                     <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <h3>Email Me</h3>
                     <p>bubinkorahmathew@gmail.com</p>
                 </a>
-
-                <a href="tel:+966532317529" class="contact-card glass-card hover-glow">
+                <a href="tel:+966532317529" class="contact-card light-card hover-lift">
                     <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                     <h3>Call Me</h3>
                     <p>+966 532317529 (KSA)</p>
-                    <p>+91 9072581257 (India)</p>
                 </a>
-
-                <a href="https://www.linkedin.com/in/bubinkmathew" target="_blank"
-                    class="contact-card glass-card hover-glow">
+                <a href="https://www.linkedin.com/in/bubinkmathew" target="_blank" class="contact-card light-card hover-lift">
                     <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
                     <h3>LinkedIn</h3>
                     <p>Connect with me</p>
                 </a>
-
-                <a href="https://github.com/bubinkorahmathew-ctrl" target="_blank"
-                    class="contact-card glass-card hover-glow">
-                    <div class="contact-icon"><i class="fab fa-github"></i></div>
-                    <h3>GitHub</h3>
-                    <p>View my projects</p>
-                </a>
             </div>
         </section>
     </main>
-
-    <footer class="glass-card">
-        <div class="footer-content">
-            <p>&copy; 2026 Bubin Korah Mathew. All rights reserved.</p>
-        </div>
+    <footer class="text-center" style="padding: 40px; background: var(--bg-dark); color: white;">
+        <p>&copy; 2026 Bubin Korah Mathew. All rights reserved.</p>
     </footer>
-
-    <!-- Custom JS -->
     <script src="js/config.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>

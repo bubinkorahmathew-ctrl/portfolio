@@ -1,7 +1,7 @@
 // Admin Portal Logic
 document.addEventListener('DOMContentLoaded', () => {
     // Safety check for Supabase initialization
-    if (!supabase || SUPABASE_URL === 'YOUR_SUPABASE_URL') {
+    if (!supabaseClient || SUPABASE_URL === 'YOUR_SUPABASE_URL') {
         const authError = document.getElementById('auth-error');
         if (authError) {
             authError.innerHTML = `
@@ -68,7 +68,7 @@ if (loginForm) {
         authCard.classList.remove('shake');
 
         try {
-            const { data, error } = await supabase.auth.signInWithPassword({
+            const { data, error } = await supabaseClient.auth.signInWithPassword({
                 email,
                 password,
             });
@@ -113,13 +113,13 @@ function setLoading(isLoading) {
 const logoutBtn = document.getElementById('logout-btn');
 if (logoutBtn) {
     logoutBtn.addEventListener('click', async () => {
-        await supabase.auth.signOut();
+        await supabaseClient.auth.signOut();
         checkAuthState();
     });
 }
 
 async function checkAuthState() {
-    const { data } = await supabase.auth.getSession();
+    const { data } = await supabaseClient.auth.getSession();
     const session = data.session;
 
     const loginContainer = document.getElementById('login-container');
@@ -143,7 +143,7 @@ async function loadAdminProjects() {
     grid.innerHTML = '<p>Loading projects...</p>';
 
     try {
-        const { data: projects, error } = await supabase
+        const { data: projects, error } = await supabaseClient
             .from('projects')
             .select('*')
             .order('id', { ascending: true });
@@ -226,14 +226,14 @@ projectForm.addEventListener('submit', async (e) => {
         let error;
         if (id) {
             // Update
-            const { error: err } = await supabase
+            const { error: err } = await supabaseClient
                 .from('projects')
                 .update(projectData)
                 .eq('id', id);
             error = err;
         } else {
             // Insert
-            const { error: err } = await supabase
+            const { error: err } = await supabaseClient
                 .from('projects')
                 .insert([projectData]);
             error = err;
@@ -255,7 +255,7 @@ window.editProject = (project) => {
 window.deleteProject = async (id) => {
     if (confirm('Are you sure you want to delete this project?')) {
         try {
-            const { error } = await supabase
+            const { error } = await supabaseClient
                 .from('projects')
                 .delete()
                 .eq('id', id);

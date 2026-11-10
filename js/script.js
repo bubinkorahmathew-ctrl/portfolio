@@ -1,5 +1,5 @@
 // Years of experience — single source used across the page
-const YEARS_EXPERIENCE = '15+';
+const YEARS_EXPERIENCE = '20+';
 
 // Navbar Scroll Effect
 const header = document.getElementById('navbar');
@@ -16,15 +16,48 @@ const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 
 mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    const open = !navMenu.classList.contains('active');
+    mobileMenu.classList.toggle('active', open);
+    navMenu.classList.toggle('active', open);
+    mobileMenu.setAttribute('aria-expanded', open);
 });
 
 // Close mobile menu when a link is clicked
 document.querySelectorAll('.nav-links').forEach(n => n.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
     navMenu.classList.remove('active');
+    mobileMenu.setAttribute('aria-expanded', false);
 }));
+
+// Highlight the nav link of the section currently in view
+function initScrollSpy() {
+    const links = [...document.querySelectorAll('.nav-links[href^="#"]')];
+    const sections = links
+        .map(link => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+    const update = () => {
+        const marker = window.innerHeight * 0.35;
+        let current = sections[0];
+        sections.forEach(section => {
+            if (section.getBoundingClientRect().top <= marker) current = section;
+        });
+        // At the very bottom, the last section is active even if it's short
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+            current = sections[sections.length - 1];
+        }
+        links.forEach(link => {
+            const active = link.getAttribute('href') === `#${current.id}`;
+            link.classList.toggle('active', active);
+            if (active) link.setAttribute('aria-current', 'true');
+            else link.removeAttribute('aria-current');
+        });
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+}
 
 // Intersection Observer for Scroll Animations
 const observerOptions = {
@@ -43,93 +76,16 @@ const observer = new IntersectionObserver((entries) => {
 // Keep every "years of experience" mention in sync
 function applyYearsOfExperience() {
     document.querySelectorAll('[data-years]').forEach(el => { el.textContent = YEARS_EXPERIENCE; });
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.content = meta.content.replace(/\d+\+/, YEARS_EXPERIENCE);
 }
 
 // -- Projects --
-const STATUS_CLASSES = {
-    'live': 'status-live',
-    'in development': 'status-dev',
-    'beta': 'status-beta',
-    'delivered': 'status-done',
-    'completed': 'status-done'
-};
-
-function escapeHtml(value) {
-    return String(value).replace(/[&<>"']/g, ch => ({
-        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-    }[ch]));
-}
-
-function getInitials(title) {
-    return title.split(/[\s–-]+/).filter(w => /^[a-z]/i.test(w)).slice(0, 2).map(w => w[0]).join('').toUpperCase();
-}
-
-// Maps legacy Supabase rows (url, status: 'live', icon_class) onto the current data model
-function normalizeProject(p) {
-    if (p.category) return p;
-    return {
-        ...p,
-        category: 'websites',
-        status: p.status === 'live' ? 'Live' : 'Delivered',
-        link: p.url ? { label: 'View Project', url: p.url } : null,
-        icon: p.icon_class,
-        highlights: [],
-        tags: p.tags || []
-    };
-}
-
-function createProjectCard(project) {
-    const card = document.createElement('article');
-    card.className = 'project-card light-card hover-lift slide-up';
-    card.dataset.category = project.category;
-
-    const statusClass = STATUS_CLASSES[(project.status || '').toLowerCase()] || 'status-done';
-    const liveDot = statusClass === 'status-live' ? '<span class="live-dot"></span> ' : '';
-    const highlights = (project.highlights || []).filter(h => h && !h.includes('[PLACEHOLDER'));
-
-    const media = project.image
-        ? `<img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.title)} screenshot" loading="lazy">`
-        : `<div class="project-placeholder cat-${escapeHtml(project.category)}" aria-hidden="true">
-               <i class="${escapeHtml(project.icon || 'fas fa-project-diagram')}"></i>
-               <span>${escapeHtml(getInitials(project.title))}</span>
-           </div>`;
-
-    const footer = project.link
-        ? `<a href="${escapeHtml(project.link.url)}" target="_blank" rel="noopener noreferrer" class="project-link">
-               <i class="fas fa-external-link-alt"></i> ${escapeHtml(project.link.label || 'View Project')}
-               <span class="sr-only">(opens in a new tab)</span>
-           </a>`
-        : (project.role
-            ? `<div class="project-role"><i class="fas fa-user-tie"></i> ${escapeHtml(project.role)}</div>`
-            : '');
-
-    card.innerHTML = `
-        <div class="project-media">
-            ${media}
-            <div class="project-badge ${statusClass}">${liveDot}${escapeHtml(project.status)}</div>
-        </div>
-        <h3>${escapeHtml(project.title)}</h3>
-        ${project.subtitle ? `<p class="project-subtitle">${escapeHtml(project.subtitle)}</p>` : ''}
-        ${project.client ? `<p class="project-meta"><strong>${project.client.includes('·') ? 'Clients' : 'Client'}:</strong> ${escapeHtml(project.client)}</p>` : ''}
-        <p class="project-desc">${escapeHtml(project.description)}</p>
-        ${project.target ? `<p class="project-meta"><strong>Target:</strong> ${escapeHtml(project.target)}</p>` : ''}
-        ${highlights.length ? `<ul class="project-highlights">${highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}</ul>` : ''}
-        <div class="project-tags">${(project.tags || []).map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</div>
-        ${footer}
-    `;
-
-    return card;
-}
-
+// Cards and tabs are pre-rendered into index.html by scripts/build-projects.js.
+// JS only adds filtering, and re-renders when Supabase supplies its own rows.
 function renderProjects(projects) {
     const container = document.getElementById('projects-container');
-    container.innerHTML = '';
-    projects.map(normalizeProject).forEach(project => {
-        const card = createProjectCard(project);
-        card.hidden = activeFilter !== 'all' && project.category !== activeFilter;
-        container.appendChild(card);
+    container.innerHTML = projects.map(projectCardHTML).join('');
+    container.querySelectorAll('.project-card').forEach(card => {
+        card.hidden = activeFilter !== 'all' && card.dataset.category !== activeFilter;
         observer.observe(card);
     });
 }
@@ -168,11 +124,8 @@ function initProjectTabs() {
     const tablist = document.getElementById('project-tabs');
     if (!tablist) return;
 
-    tablist.innerHTML = PROJECT_CATEGORIES.map((cat, i) => `
-        <button type="button" role="tab" class="project-tab${i === 0 ? ' active' : ''}"
-            id="tab-${cat.id}" data-filter="${cat.id}" aria-controls="projects-container"
-            aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}">${escapeHtml(cat.label)}</button>
-    `).join('');
+    // Fallback if the static build hasn't been run
+    if (!tablist.querySelector('.project-tab')) tablist.innerHTML = projectTabsHTML(PROJECT_CATEGORIES);
 
     const tabs = [...tablist.querySelectorAll('.project-tab')];
 
@@ -207,9 +160,10 @@ function initProjectTabs() {
     });
 }
 
-// Dynamic Project Loading — uses Supabase rows when configured, otherwise PROJECTS from projects.js
+// Uses Supabase rows when configured, otherwise the pre-rendered cards from js/projects.js
 async function fetchProjects() {
-    renderProjects(PROJECTS);
+    const container = document.getElementById('projects-container');
+    if (!container.querySelector('.project-card')) renderProjects(PROJECTS);
 
     if (!supabaseClient) return;
 
@@ -231,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     applyYearsOfExperience();
     initProjectTabs();
     fetchProjects();
+    initScrollSpy();
 
     // Observe existing static elements
     document.querySelectorAll('.slide-up').forEach((element) => {

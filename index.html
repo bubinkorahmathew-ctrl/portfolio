@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubin Korah Mathew | ERP, POS & ZATCA Solutions Specialist</title>
+    <title>Bubin Korah Mathew – Odoo Developer &amp; ERP Consultant | Riyadh</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio of Bubin Korah Mathew, ERP, POS & ZATCA Solutions Specialist, Odoo 19 certified consultant and founder of Sparkwings Innovations, with 15+ years of experience across Saudi Arabia and India.">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23F5A623'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="Bubin Korah Mathew is an Odoo Developer and ERP Consultant in Riyadh, Saudi Arabia, with 20+ years in ERP, POS and ZATCA solutions. Odoo 19 certified, building custom Odoo 19 and Odoo 20 modules.">
+    <link rel="canonical" href="https://portfolio-pi-roan-40.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-pi-roan-40.vercel.app/">
+    <meta property="og:title" content="Bubin Korah Mathew – Odoo Developer &amp; ERP Consultant | Riyadh">
+    <meta property="og:description" content="Odoo Developer and ERP Consultant in Riyadh with 20+ years in ERP, POS and ZATCA solutions. Custom Odoo 19 and Odoo 20 modules.">
+    <meta property="og:image" content="https://portfolio-pi-roan-40.vercel.app/images/bubin-portrait.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0A0C0B">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23C5F82A'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Arial' font-weight='700' fill='%230A0C0B' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,19 +32,20 @@
         <div class="nav-container">
             <a href="#home" class="logo">
                 <div class="logo-circle">B</div>
-                Bubin<span style="color: var(--accent-primary);">.</span>
+                Bubin<span class="highlight-yellow">.</span>
             </a>
-            <div class="menu-toggle" id="mobile-menu">
+            <button type="button" class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-links">Home</a></li>
                     <li><a href="#services" class="nav-links">Services</a></li>
                     <li><a href="#about" class="nav-links">About</a></li>
                     <li><a href="#experience" class="nav-links">Experience</a></li>
+                    <li><a href="#odoo-journey" class="nav-links">Odoo Journey</a></li>
                     <li><a href="#certifications" class="nav-links">Qualifications</a></li>
                     <li><a href="#projects" class="nav-links">Projects</a></li>
                     <li><a href="#contact" class="nav-links btn-outline">Contact Me</a></li>
@@ -47,6 +56,7 @@
 
     <main>
         <!-- Hero Section -->
+        <div class="grid-band">
         <section id="home" class="hero section">
             <div class="hero-grid">
                 <div class="hero-text fade-in">
@@ -58,12 +68,12 @@
                         Hello There!
                     </div>
                     <h1 class="title">
-                        I'm <span class="highlight-yellow">Bubin Korah,</span><br>
-                        IT Operations Specialist<br>
-                        Based in KSA.
+                        I’m <span class="highlight-yellow">Bubin Korah,</span><br>
+                        <span class="title-role">IT Operations &amp; Odoo Techno-Functional Consultant</span><br>
+                        Based in Riyadh, KSA.
                     </h1>
                     <p class="description">
-                        I'm an experienced IT Support Specialist & ERP Consultant with <span data-years>15+</span> years in the field, collaborating with retail, FMCG, and restaurant businesses.
+                        Odoo 19 certified techno-functional consultant with <span data-years>20+</span> years in IT operations, helping retail, FMCG and restaurant businesses run smarter. I configure Odoo around real business processes and build custom modules with Python, XML, PostgreSQL and OWL, backed by hands-on experience in POS, inventory and multi-branch IT operations.
                     </p>
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary">
@@ -75,7 +85,7 @@
                 <div class="hero-image slide-up">
                     <div class="blob-bg"></div>
                     <div class="portrait">
-                        <img src="images/profile_nobg.png" alt="Bubin Korah Portrait">
+                        <img src="images/bubin-portrait.jpg" alt="Bubin Korah Mathew in a dark suit" width="640" height="960">
                     </div>
                     <div class="floating-badge badge-1">
                         <div class="badge-inner">
@@ -83,11 +93,13 @@
                             <span>HIRE ME</span>
                         </div>
                     </div>
+                    <div class="floating-tag tag-0">Odoo Developer</div>
                     <div class="floating-tag tag-1">ERP Consultant</div>
                     <div class="floating-tag tag-2">POS Specialist</div>
                 </div>
             </div>
         </section>
+        </div>
 
         <!-- Marquee Section -->
         <div class="marquee-container">
@@ -106,18 +118,18 @@
         <!-- Services Section -->
         <section id="services" class="services section">
             <div class="section-header fade-in">
-                <div class="header-subtitle">- Services</div>
+                <div class="header-subtitle">Services</div>
                 <div class="header-title">
                     <h2><span class="highlight-yellow">Services</span> I Provide</h2>
                     <a href="#experience" class="btn btn-dark">View All Services <span class="icon-circle-small"><i class="fas fa-arrow-right"></i></span></a>
                 </div>
             </div>
-            
+
             <div class="services-grid slide-up">
                 <div class="service-card light-card">
                     <div class="service-icon"><i class="fas fa-cogs"></i></div>
                     <h3>ERP Implementation</h3>
-                    <p>End-to-end setup and customization of Odoo & ERPNext for retail and restaurant operations.</p>
+                    <p>End-to-end setup, customization and custom module development in Odoo for retail and restaurant operations.</p>
                 </div>
                 <div class="service-card light-card">
                     <div class="service-icon"><i class="fas fa-cash-register"></i></div>
@@ -153,27 +165,27 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="about section dark-section">
+        <section id="about" class="about section dark-section grid-band">
             <div class="about-grid">
                 <div class="about-image slide-up">
                     <div class="blob-bg-yellow"></div>
-                    <div class="portrait">
-                         <img src="images/profile_nobg.png" alt="Bubin Korah Portrait">
+                    <div class="portrait portrait-round">
+                        <img src="images/bubin-portrait.jpg" alt="Bubin Korah Mathew" width="640" height="960" loading="lazy">
                     </div>
                     <div class="floating-pill pill-1">Odoo ERP</div>
-                    <div class="floating-pill pill-2">ERPNext</div>
+                    <div class="floating-pill pill-2">Odoo Modules</div>
                     <div class="floating-pill pill-3">POS Systems</div>
                     <div class="floating-pill pill-4">ZATCA</div>
                 </div>
                 <div class="about-text fade-in">
-                    <div class="header-subtitle yellow-text">- About Me</div>
+                    <div class="header-subtitle">About Me</div>
                     <h2 class="light-title">Who is <span class="highlight-yellow">Bubin Korah?</span></h2>
                     <p class="description-light">
-                        I am an IT Support Specialist and ERP Consultant with <span data-years>15+</span> years of experience in POS systems, ERP implementation, and retail IT operations across Saudi Arabia. I specialize in empowering retail businesses through scalable technology solutions.
+                        I am an IT Support Specialist and ERP Consultant with <span data-years>20+</span> years of experience in POS systems, ERP implementation, and retail IT operations across Saudi Arabia. I specialize in empowering retail businesses through scalable technology solutions.
                     </p>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <h3 data-years>15+</h3>
+                            <h3 data-years>20+</h3>
                             <p>Years of Experience</p>
                         </div>
                         <div class="stat-item">
@@ -186,17 +198,17 @@
                         </div>
                     </div>
                     <div class="about-actions">
-                        <a href="Bubin_Korah_Mathew_CV.pdf" download class="btn btn-outline-yellow">
+                        <a href="/Bubin_Korah_Mathew_CV.pdf" download class="btn btn-outline-yellow">
                             Download CV <span class="icon-circle-yellow"><i class="fas fa-arrow-right"></i></span>
                         </a>
-                        <div class="signature" style="font-family: 'Outfit'; font-size: 1.5rem; color: var(--accent-primary);">Bubin Korah</div>
+                        <div class="signature">Bubin Korah</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience Timeline Section -->
-        <section id="experience" class="experience section" style="background: var(--bg-main);">
+        <section id="experience" class="experience section">
             <div class="section-title slide-up text-center">
                 <h2>Work Experience</h2>
             </div>
@@ -248,13 +260,88 @@
             </div>
         </section>
 
+        <!-- Odoo Developer Journey Section -->
+        <div class="band-alt">
+        <section id="odoo-journey" class="journey section">
+            <div class="section-title slide-up text-center">
+                <div class="header-subtitle">Odoo Journey</div>
+                <h2>My <span class="highlight-yellow">Odoo Developer</span> Journey</h2>
+                <p>From 20 years in ERP and POS operations to building custom Odoo modules.</p>
+            </div>
+            <ol class="journey-timeline">
+                <li class="journey-item slide-up">
+                    <div class="journey-dot"><i class="fas fa-store"></i></div>
+                    <div class="journey-content light-card">
+                        <span class="timeline-date">2007 – 2025</span>
+                        <h3>Foundation in ERP &amp; POS Operations</h3>
+                        <p>Supported ERP, POS and inventory systems for 90+ retail and restaurant branches in Saudi Arabia, learning the business processes Odoo automates.</p>
+                    </div>
+                </li>
+                <li class="journey-item slide-up">
+                    <div class="journey-dot"><i class="fas fa-route"></i></div>
+                    <div class="journey-content light-card">
+                        <span class="timeline-date">Sep 2025</span>
+                        <h3>Moved into Odoo Implementation</h3>
+                        <p>Started freelance Odoo ERP and POS consulting for restaurant and retail businesses: Inventory, Purchase, Sales, CRM and pricing.</p>
+                    </div>
+                </li>
+                <li class="journey-item slide-up">
+                    <div class="journey-dot"><i class="fas fa-certificate"></i></div>
+                    <div class="journey-content light-card">
+                        <span class="timeline-date">2026</span>
+                        <h3>Odoo 19 Functional Certification</h3>
+                        <p>Certified by Odoo S.A.</p>
+                    </div>
+                </li>
+                <li class="journey-item slide-up">
+                    <div class="journey-dot"><i class="fab fa-whatsapp"></i></div>
+                    <div class="journey-content light-card">
+                        <span class="timeline-date">2026</span>
+                        <h3>Odoo 19 Enterprise Client Project</h3>
+                        <p>On-premise implementation covering WhatsApp–Odoo integration, CRM lead follow-up, end-to-end CRM-to-Sales workflow, quotation templates, and product and pricing setup.</p>
+                    </div>
+                </li>
+                <li class="journey-item slide-up">
+                    <div class="journey-dot"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="journey-content light-card">
+                        <span class="timeline-date">Sep – Dec 2026</span>
+                        <h3>Odoo Development Training</h3>
+                        <p>4-month Odoo Development Training Program at Betrac Academy, Kannur, Kerala, India.</p>
+                    </div>
+                </li>
+                <li class="journey-item slide-up">
+                    <div class="journey-dot"><i class="fas fa-code"></i></div>
+                    <div class="journey-content light-card">
+                        <span class="timeline-date">2026 – Present</span>
+                        <h3>Custom Module Development</h3>
+                        <p>Building custom Odoo 19 and Odoo 20 modules with Python, XML, PostgreSQL and OWL (JavaScript).</p>
+                    </div>
+                </li>
+            </ol>
+            <ul class="skill-chips slide-up" aria-label="Odoo development skills">
+                <li>Python</li>
+                <li>Odoo ORM</li>
+                <li>XML Views</li>
+                <li>PostgreSQL</li>
+                <li>OWL / JavaScript</li>
+                <li>QWeb Reports</li>
+                <li>ir.sequence</li>
+                <li>Odoo POS</li>
+                <li>Odoo CRM</li>
+                <li>Inventory</li>
+                <li>Sales</li>
+                <li>Purchase</li>
+            </ul>
+        </section>
+        </div>
+
         <!-- Qualifications Section -->
         <section id="certifications" class="certifications section">
             <div class="section-title slide-up text-center">
-                <div class="header-subtitle">- Qualifications</div>
+                <div class="header-subtitle">Qualifications</div>
                 <h2>Education & Certifications</h2>
             </div>
-            
+
             <div class="qualifications-container slide-up">
                 <!-- Column 1: Academic -->
                 <div class="qual-column">
@@ -263,12 +350,17 @@
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fas fa-university"></i></div>
                             <h3>BSc Information Technology</h3>
-                            <p>IEC University, India<br><strong style="color: var(--accent-primary);">Degree</strong></p>
+                            <p>IEC University, India<br><strong class="qual-year">Degree</strong></p>
                         </div>
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fas fa-microchip"></i></div>
                             <h3>Diploma in Computer Hardware & Networking</h3>
-                            <p>Luna Institute of Engineering<br><strong style="color: var(--accent-primary);">2003</strong></p>
+                            <p>Luna Institute of Engineering<br><strong class="qual-year">2003</strong></p>
+                        </div>
+                        <div class="service-card light-card">
+                            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Odoo Development Training Program</h3>
+                            <p>Betrac Academy, Kannur, Kerala<br><strong class="qual-year">Sep 2026 – Dec 2026</strong></p>
                         </div>
                     </div>
                 </div>
@@ -280,63 +372,251 @@
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
                             <h3>Project Management Professional (PMP®)</h3>
-                            <p>Project Management Institute (PMI)<br><strong style="color: var(--accent-primary);">2025</strong></p>
+                            <p>Project Management Institute (PMI)<br><strong class="qual-year">2025</strong></p>
                         </div>
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fas fa-server"></i></div>
                             <h3>ITIL® V4 Foundation</h3>
-                            <p>PeopleCert<br><strong style="color: var(--accent-primary);">2025</strong></p>
+                            <p>PeopleCert<br><strong class="qual-year">2025</strong></p>
                         </div>
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fab fa-python"></i></div>
                             <h3>Python Programming</h3>
-                            <p>ICTRD<br><strong style="color: var(--accent-primary);">2025</strong></p>
+                            <p>ICTRD<br><strong class="qual-year">2025</strong></p>
                         </div>
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fas fa-cogs"></i></div>
                             <h3>Odoo 19 Certified</h3>
-                            <p>Odoo S.A.<br><strong style="color: var(--accent-primary);">2026</strong></p>
+                            <p>Odoo S.A.<br><strong class="qual-year">2026</strong></p>
                         </div>
                         <div class="service-card light-card">
                             <div class="service-icon"><i class="fas fa-handshake"></i></div>
                             <h3>Odoo Partner</h3>
-                            <p>Sparkwings Innovations OPC Pvt. Ltd.<br><strong style="color: var(--accent-primary);">Official Partner</strong></p>
+                            <p>Sparkwings Innovations OPC Pvt. Ltd.<br><strong class="qual-year">Official Partner</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Tools Section -->
-        <section class="tools section text-center" style="background: var(--bg-card); padding: 80px 20px;">
-            <div class="section-title slide-up" style="margin-bottom: 40px;">
-                <div class="header-subtitle">- My Favorite Tools</div>
-                <h2 style="font-size: 2.5rem; margin-top: 10px;"><span class="highlight-yellow">Exploring the Tools</span><br>Behind My Work</h2>
+        <div class="band-alt">
+        <section class="tools section text-center">
+            <div class="section-title slide-up">
+                <div class="header-subtitle">My Favorite Tools</div>
+                <h2><span class="highlight-yellow">Exploring the Tools</span><br>Behind My Work</h2>
             </div>
-            <div class="tools-grid slide-up" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-                <div class="tool-circle"><i class="fab fa-python" style="color: #3776AB;"></i></div>
-                <div class="tool-circle"><i class="fas fa-server" style="color: #6C757D;"></i></div>
-                <div class="tool-circle"><i class="fas fa-cash-register" style="color: #198754;"></i></div>
-                <div class="tool-circle"><i class="fab fa-windows" style="color: #0078D6;"></i></div>
-                <div class="tool-circle"><i class="fas fa-network-wired" style="color: #DC3545;"></i></div>
+            <div class="tools-grid slide-up">
+                <div class="tool-circle"><i class="fab fa-python" style="color: #4B8BBE;"></i></div>
+                <div class="tool-circle"><i class="fas fa-server" style="color: #ADB5BD;"></i></div>
+                <div class="tool-circle"><i class="fas fa-cash-register" style="color: #2FBF71;"></i></div>
+                <div class="tool-circle"><i class="fab fa-windows" style="color: #3A9FF0;"></i></div>
+                <div class="tool-circle"><i class="fas fa-network-wired" style="color: #F05D6C;"></i></div>
             </div>
         </section>
+        </div>
 
         <!-- Projects Section -->
         <section id="projects" class="projects-section section">
             <div class="section-title slide-up text-center">
+                <div class="header-subtitle">Projects</div>
                 <h2>Key Projects</h2>
                 <p>Products I've built, ERP &amp; POS implementations, and digital solutions delivered across Saudi Arabia and India.</p>
             </div>
-            <!-- Tabs and cards are rendered from js/projects.js -->
-            <div class="project-tabs" id="project-tabs" role="tablist" aria-label="Filter projects by category"></div>
-            <div class="projects-grid" id="projects-container" role="tabpanel" aria-live="polite">
-                <noscript><p class="text-center">Enable JavaScript to view my projects.</p></noscript>
+            <!-- Tabs and cards are generated from js/projects.js by scripts/build-projects.js — edit the data, not this markup -->
+            <div class="project-tabs" id="project-tabs" role="tablist" aria-label="Filter projects by category">
+                <!-- BUILD:PROJECT-TABS -->
+                <button type="button" role="tab" class="project-tab active" id="tab-all" data-filter="all" aria-controls="projects-container" aria-selected="true" tabindex="0">All</button>
+                <button type="button" role="tab" class="project-tab" id="tab-odoo" data-filter="odoo" aria-controls="projects-container" aria-selected="false" tabindex="-1">Odoo Development</button>
+                <button type="button" role="tab" class="project-tab" id="tab-products" data-filter="products" aria-controls="projects-container" aria-selected="false" tabindex="-1">Products</button>
+                <button type="button" role="tab" class="project-tab" id="tab-erp-pos" data-filter="erp-pos" aria-controls="projects-container" aria-selected="false" tabindex="-1">ERP &amp; POS</button>
+                <button type="button" role="tab" class="project-tab" id="tab-websites" data-filter="websites" aria-controls="projects-container" aria-selected="false" tabindex="-1">Websites</button>
+                <button type="button" role="tab" class="project-tab" id="tab-infra" data-filter="infra" aria-controls="projects-container" aria-selected="false" tabindex="-1">IT Infrastructure</button>
+                <!-- /BUILD:PROJECT-TABS -->
+            </div>
+            <div class="projects-grid" id="projects-container" role="tabpanel" aria-labelledby="tab-all" aria-live="polite">
+                <!-- BUILD:PROJECT-CARDS -->
+                <article class="project-card light-card hover-lift slide-up" data-category="odoo">
+                    <div class="project-media"><div class="project-placeholder cat-odoo" aria-hidden="true"><i class="fas fa-hospital"></i><span>HM</span></div>
+                    <div class="project-version"><i class="fas fa-cube"></i> Odoo 20</div>
+                    <div class="project-badge status-done">Completed</div></div>
+                    <h3>Hospital Management System</h3>
+                    <p class="project-subtitle">Custom Odoo Module</p>
+                    <p class="project-desc">Custom hospital module with related Doctor, Patient and Consultation models. Being extended with a Pharmacy &amp; Lab module, where prescribed medicines and tests flow to the pharmacy and lab and are linked to Sales for billing.</p>
+                    <ul class="project-highlights"><li>Automatic patient IDs with ir.sequence (e.g. PID/2026/00001)</li><li>Smart buttons for appointment history</li><li>Draft → Confirmed → Completed workflow</li><li>QWeb PDF patient reports</li></ul>
+                    <div class="project-tags"><span class="tag">Python</span><span class="tag">XML</span><span class="tag">PostgreSQL</span><span class="tag">QWeb</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Odoo Developer</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="odoo">
+                    <div class="project-media"><div class="project-placeholder cat-odoo" aria-hidden="true"><i class="fas fa-user-check"></i><span>CL</span></div>
+                    <div class="project-version"><i class="fas fa-cube"></i> Odoo 20</div>
+                    <div class="project-badge status-done">Completed</div></div>
+                    <h3>CRM Lead Capture &amp; Validation Module</h3>
+                    <p class="project-subtitle">Custom Odoo Module</p>
+                    <p class="project-desc">Application intake module linked to the CRM pipeline, with strict server-side validation and stage-based record locking.</p>
+                    <ul class="project-highlights"><li>Validation with @api.constrains + regex for email, phone, date of birth, PAN and Aadhaar</li><li>Fields lock as a record moves through its stages</li></ul>
+                    <div class="project-tags"><span class="tag">Python</span><span class="tag">ORM</span><span class="tag">Regex</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Odoo Developer</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="odoo">
+                    <div class="project-media"><div class="project-placeholder cat-odoo" aria-hidden="true"><i class="fas fa-pizza-slice"></i><span>PR</span></div>
+                    <div class="project-version"><i class="fas fa-cube"></i> Odoo 20</div>
+                    <div class="project-badge status-dev">In Development</div></div>
+                    <h3>Pizza Restaurant Suite</h3>
+                    <p class="project-subtitle">POS, Kitchen Display &amp; Recipes</p>
+                    <p class="project-desc">Customised Odoo POS and Kitchen Display System for a pizza restaurant, with recipe-driven stock control and CRM.</p>
+                    <ul class="project-highlights"><li>Recipe management with Bills of Materials</li><li>Automatic ingredient deduction from inventory after each sale</li><li>Customised POS and Kitchen Display System, plus CRM</li></ul>
+                    <div class="project-tags"><span class="tag">POS</span><span class="tag">KDS</span><span class="tag">MRP/BoM</span><span class="tag">Inventory</span><span class="tag">OWL</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Odoo Developer</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="odoo">
+                    <div class="project-media"><div class="project-placeholder cat-odoo" aria-hidden="true"><i class="fas fa-school"></i><span>SM</span></div>
+                    <div class="project-version"><i class="fas fa-cube"></i> Odoo 19</div>
+                    <div class="project-badge status-dev">In Development</div></div>
+                    <h3>School Management Module</h3>
+                    <p class="project-subtitle">Custom Odoo Module</p>
+                    <p class="project-desc">Custom school module with a student model, with teacher management being added next.</p>
+                    <div class="project-tags"><span class="tag">Python</span><span class="tag">XML</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Odoo Developer</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="odoo">
+                    <div class="project-media"><div class="project-placeholder cat-odoo" aria-hidden="true"><i class="fab fa-whatsapp"></i><span>WO</span></div>
+                    <div class="project-version"><i class="fas fa-cube"></i> Odoo 19</div>
+                    <div class="project-badge status-done">Completed</div></div>
+                    <h3>WhatsApp–Odoo CRM Integration</h3>
+                    <p class="project-subtitle">Odoo 19 Enterprise (On-Premise) Client Project</p>
+                    <p class="project-meta"><strong>Client:</strong> Trading company, KSA</p>
+                    <p class="project-desc">Client project connecting WhatsApp to Odoo CRM, with a lead follow-up workflow and an end-to-end CRM-to-Sales process.</p>
+                    <ul class="project-highlights"><li>WhatsApp-to-Odoo lead capture and follow-up workflow</li><li>End-to-end CRM → Quotation → Sales process</li><li>Quotation templates and product/pricing setup</li></ul>
+                    <div class="project-tags"><span class="tag">CRM</span><span class="tag">Sales</span><span class="tag">Integration</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Odoo Consultant</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="products">
+                    <div class="project-media"><div class="project-placeholder cat-products" aria-hidden="true"><i class="fas fa-truck"></i><span>R</span></div>
+                    <div class="project-badge status-dev">In Development</div></div>
+                    <h3>Routewings</h3>
+                    <p class="project-subtitle">Van Sales &amp; Route POS Platform (SaaS)</p>
+                    <p class="project-desc">Multi-tenant SaaS platform for van sales and route-based distribution. Salesmen sell, invoice and collect in the field — even offline — while managers track routes, stock and cash in real time.</p>
+                    <ul class="project-highlights"><li>ZATCA Phase 1 &amp; 2 e-invoicing with thermal and A4 PDF invoices</li><li>Offline-first mobile web app with GPS customer mapping and geofenced check-in</li><li>Virtual van stock, daily loading/closing and cash reconciliation</li><li>Optional two-way Odoo ERP connector</li></ul>
+                    <div class="project-tags"><span class="tag">NestJS</span><span class="tag">PostgreSQL</span><span class="tag">Next.js</span><span class="tag">ZATCA</span><span class="tag">Odoo Integration</span><span class="tag">SaaS</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Product Owner &amp; Architect</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="products">
+                    <div class="project-media"><div class="project-placeholder cat-products" aria-hidden="true"><i class="fas fa-receipt"></i><span>ZB</span></div>
+                    <div class="project-badge status-dev">In Development</div></div>
+                    <h3>ZATCA Billing Software</h3>
+                    <p class="project-subtitle">Desktop Billing for Small Shops</p>
+                    <p class="project-desc">Standalone desktop billing application for small retail shops in Saudi Arabia, built from the ground up for ZATCA e-invoicing compliance.</p>
+                    <ul class="project-highlights"><li>ZATCA Phase 1 &amp; Phase 2 compliant invoices</li><li>Simple, fast checkout designed for non-technical shop owners</li></ul>
+                    <div class="project-tags"><span class="tag">ZATCA</span><span class="tag">E-Invoicing</span><span class="tag">Desktop App</span><span class="tag">Retail</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Developer</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="products">
+                    <div class="project-media"><div class="project-placeholder cat-products" aria-hidden="true"><i class="fas fa-graduation-cap"></i><span>OO</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>OSSAE Online Exam Portal</h3>
+                    <p class="project-subtitle">Bilingual Sunday School Exam Platform</p>
+                    <p class="project-desc">Online exam platform for OSSAE Desert Land Central Region (Thrissur Diocese) with English/Malayalam question banks for Classes 5–12.</p>
+                    <ul class="project-highlights"><li>25 randomized questions per attempt, auto-scored instantly</li><li>Fully bilingual (English / Malayalam), one link per class</li></ul>
+                    <div class="project-tags"><span class="tag">Web App</span><span class="tag">Bilingual</span><span class="tag">Vercel</span><span class="tag">Education</span></div>
+                    <a href="https://ossaedesertland-central.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> View Project<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="products">
+                    <div class="project-media"><div class="project-placeholder cat-products" aria-hidden="true"><i class="fas fa-users-cog"></i><span>KO</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>Knockout OS</h3>
+                    <p class="project-subtitle">Boxing Academy Management Software</p>
+                    <p class="project-desc">Developed a comprehensive system for training centers to manage students, coaches, attendance, fees, salaries, and daily operations.</p>
+                    <p class="project-meta"><strong>Target:</strong> Boxing Academies &amp; Small Sports Businesses</p>
+                    <div class="project-tags"><span class="tag">AI-Assisted Development</span><span class="tag">Academy Ops</span><span class="tag">Finance Tracking</span></div>
+                    <a href="https://punchacadamy.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> View Project<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="products">
+                    <div class="project-media"><div class="project-placeholder cat-products" aria-hidden="true"><i class="fas fa-dumbbell"></i><span>GP</span></div>
+                    <div class="project-badge status-beta">Beta</div></div>
+                    <h3>GymFlow Pro</h3>
+                    <p class="project-subtitle">Gym &amp; Fitness Management Software</p>
+                    <p class="project-desc">Developed a practical management solution for fitness centers. Efficiently handles member registration, attendance, coach schedules, and expense tracking.</p>
+                    <p class="project-meta"><strong>Target:</strong> Gyms &amp; Personal Training Centers</p>
+                    <div class="project-tags"><span class="tag">AI-Assisted Development</span><span class="tag">Gym Ops</span><span class="tag">Member Management</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Developer</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="erp-pos">
+                    <div class="project-media"><div class="project-placeholder cat-erp-pos" aria-hidden="true"><i class="fas fa-utensils"></i><span>MB</span></div>
+                    <div class="project-badge status-done">Delivered</div></div>
+                    <h3>Multi-branch Restaurant POS Implementation</h3>
+                    <p class="project-desc">End-to-end deployment of centralized POS ecosystems across multiple locations, optimizing order flow and real-time inventory tracking for high-volume operations.</p>
+                    <div class="project-tags"><span class="tag">POS Systems</span><span class="tag">Networking</span><span class="tag">Inventory Control</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Implementation Lead</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="erp-pos">
+                    <div class="project-media"><div class="project-placeholder cat-erp-pos" aria-hidden="true"><i class="fas fa-cogs"></i><span>OE</span></div>
+                    <div class="project-badge status-done">Delivered</div></div>
+                    <h3>Odoo ERP Community Implementation</h3>
+                    <p class="project-desc">Customized Odoo ERP deployment for retail and FMCG sectors, focusing on Accounting, HR, and Supply Chain automation to streamline business processes.</p>
+                    <div class="project-tags"><span class="tag">Odoo</span><span class="tag">Python</span><span class="tag">ERP</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> Solutions Architect</div>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="websites">
+                    <div class="project-media"><div class="project-placeholder cat-websites" aria-hidden="true"><i class="fas fa-globe"></i><span>SI</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>Samku International</h3>
+                    <p class="project-subtitle">Bilingual Corporate Website</p>
+                    <p class="project-desc">Developed a comprehensive corporate website (bilingual). Managed complete IT infrastructure setup including domain registration and Google Workspace email hosting. Integrated interactive elements including WhatsApp business connectivity and an automated chatbot for customer service. Also handled hosting setup and social media integration.</p>
+                    <div class="project-tags"><span class="tag">Web Development</span><span class="tag">IT Infrastructure</span><span class="tag">Google Workspace</span></div>
+                    <a href="https://samkume.com/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> Visit Website<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="websites">
+                    <div class="project-media"><div class="project-placeholder cat-websites" aria-hidden="true"><i class="fas fa-laptop-code"></i><span>PE</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>POS Expert – IT &amp; ERP Solutions</h3>
+                    <p class="project-desc">Leading IT solutions provider specializing in custom ERP implementations and point-of-sale systems in Saudi Arabia.</p>
+                    <div class="project-tags"><span class="tag">ERP</span><span class="tag">POS</span><span class="tag">IT Support</span></div>
+                    <a href="https://posexpertech.com/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> View Project<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="websites">
+                    <div class="project-media"><div class="project-placeholder cat-websites" aria-hidden="true"><i class="fas fa-bolt"></i><span>SI</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>Sparkwings Innovations</h3>
+                    <p class="project-subtitle">Official Odoo Partner</p>
+                    <p class="project-desc">My IT company — an official Odoo partner delivering ERP implementations, custom software products, web development and IT infrastructure.</p>
+                    <div class="project-tags"><span class="tag">Odoo Partner</span><span class="tag">Custom Software</span><span class="tag">ERP</span><span class="tag">IT Solutions</span></div>
+                    <a href="https://sparkwings.co.in/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> View Project<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="websites">
+                    <div class="project-media"><div class="project-placeholder cat-websites" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i><span>NC</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>Nishad CV – Senior Accounts Manager</h3>
+                    <p class="project-desc">A professional digital CV showcasing 17+ years of financial expertise, VAT management, and ZATCA e-invoicing.</p>
+                    <div class="project-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div>
+                    <a href="https://nishadcv-354l.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> View Project<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="websites">
+                    <div class="project-media"><div class="project-placeholder cat-websites" aria-hidden="true"><i class="fas fa-warehouse"></i><span>LJ</span></div>
+                    <div class="project-badge status-live"><span class="live-dot"></span> Live</div></div>
+                    <h3>Linu John – Supply Chain Portfolio</h3>
+                    <p class="project-desc">Sophisticated portfolio specializing in warehouse management, SAP Business One, and inventory control efficiency.</p>
+                    <div class="project-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">SAP</span></div>
+                    <a href="https://poetic-starburst-dcf1cc.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> View Project<span class="sr-only"> (opens in a new tab)</span></a>
+                </article>
+                <article class="project-card light-card hover-lift slide-up" data-category="infra">
+                    <div class="project-media"><div class="project-placeholder cat-infra" aria-hidden="true"><i class="fas fa-server"></i><span>DG</span></div>
+                    <div class="project-badge status-done">Completed</div></div>
+                    <h3>Domain &amp; Google Workspace Setup</h3>
+                    <p class="project-meta"><strong>Clients:</strong> Eastern International · Sama Musqat Real Estate</p>
+                    <p class="project-desc">Business domain registration and secure professional email hosting via Google Workspace for multiple clients.</p>
+                    <div class="project-tags"><span class="tag">Domain Registration</span><span class="tag">Google Workspace</span><span class="tag">Email Hosting</span></div>
+                    <div class="project-role"><i class="fas fa-user-tie"></i> IT Infrastructure Specialist</div>
+                </article>
+                <!-- /BUILD:PROJECT-CARDS -->
             </div>
         </section>
-        
+
         <!-- Contact Section -->
-        <section id="contact" class="contact section text-center" style="background: var(--bg-card);">
+        <div class="band-alt">
+        <section id="contact" class="contact section text-center">
             <div class="section-title slide-up">
+                <div class="header-subtitle">Contact</div>
                 <h2>Get In Touch</h2>
                 <p>Looking for an experienced IT Operations Manager? Let's connect.</p>
             </div>
@@ -368,12 +648,14 @@
                 </a>
             </div>
         </section>
+        </div>
     </main>
-    <footer class="text-center" style="padding: 40px; background: var(--bg-dark); color: white;">
+    <footer class="site-footer text-center">
         <p>&copy; 2026 Bubin Korah Mathew. All rights reserved.</p>
     </footer>
     <script src="js/config.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/project-cards.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

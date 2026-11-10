@@ -1,8 +1,10 @@
 // -- Project Data --
 // Single source of truth for the "Key Projects" section.
-// To add/edit a project, change this array only — cards and filters render from it.
+// To add/edit a project, change this array, then run `node scripts/build-projects.js`
+// to regenerate the static cards in index.html (the browser also uses this file for filters).
 //
-// category: products | erp-pos | websites | infra
+// category: odoo | products | erp-pos | websites | infra
+// version:  optional Odoo version badge, e.g. 'Odoo 20'
 // status:   Live | In Development | Beta | Delivered | Completed
 // link:     { label, url } or null (null → no button, role is shown instead)
 // image:    path under images/projects/ or null (null → gradient placeholder)
@@ -10,6 +12,7 @@
 
 const PROJECT_CATEGORIES = [
     { id: 'all', label: 'All' },
+    { id: 'odoo', label: 'Odoo Development' },
     { id: 'products', label: 'Products' },
     { id: 'erp-pos', label: 'ERP & POS' },
     { id: 'websites', label: 'Websites' },
@@ -17,6 +20,104 @@ const PROJECT_CATEGORIES = [
 ];
 
 const PROJECTS = [
+    // ---------- ODOO DEVELOPMENT ----------
+    {
+        id: 'hospital-management',
+        title: 'Hospital Management System',
+        subtitle: 'Custom Odoo Module',
+        category: 'odoo',
+        version: 'Odoo 20',
+        status: 'Completed',
+        role: 'Odoo Developer',
+        client: null,
+        description: 'Custom hospital module with related Doctor, Patient and Consultation models. Being extended with a Pharmacy & Lab module, where prescribed medicines and tests flow to the pharmacy and lab and are linked to Sales for billing.',
+        highlights: [
+            'Automatic patient IDs with ir.sequence (e.g. PID/2026/00001)',
+            'Smart buttons for appointment history',
+            'Draft → Confirmed → Completed workflow',
+            'QWeb PDF patient reports'
+        ],
+        tags: ['Python', 'XML', 'PostgreSQL', 'QWeb'],
+        link: null,
+        image: null,
+        icon: 'fas fa-hospital'
+    },
+    {
+        id: 'crm-lead-capture',
+        title: 'CRM Lead Capture & Validation Module',
+        subtitle: 'Custom Odoo Module',
+        category: 'odoo',
+        version: 'Odoo 20',
+        status: 'Completed',
+        role: 'Odoo Developer',
+        client: null,
+        description: 'Application intake module linked to the CRM pipeline, with strict server-side validation and stage-based record locking.',
+        highlights: [
+            'Validation with @api.constrains + regex for email, phone, date of birth, PAN and Aadhaar',
+            'Fields lock as a record moves through its stages'
+        ],
+        tags: ['Python', 'ORM', 'Regex'],
+        link: null,
+        image: null,
+        icon: 'fas fa-user-check'
+    },
+    {
+        id: 'pizza-restaurant-suite',
+        title: 'Pizza Restaurant Suite',
+        subtitle: 'POS, Kitchen Display & Recipes',
+        category: 'odoo',
+        version: 'Odoo 20',
+        status: 'In Development',
+        role: 'Odoo Developer',
+        client: null,
+        description: 'Customised Odoo POS and Kitchen Display System for a pizza restaurant, with recipe-driven stock control and CRM.',
+        highlights: [
+            'Recipe management with Bills of Materials',
+            'Automatic ingredient deduction from inventory after each sale',
+            'Customised POS and Kitchen Display System, plus CRM'
+        ],
+        tags: ['POS', 'KDS', 'MRP/BoM', 'Inventory', 'OWL'],
+        link: null,
+        image: null,
+        icon: 'fas fa-pizza-slice'
+    },
+    {
+        id: 'school-management',
+        title: 'School Management Module',
+        subtitle: 'Custom Odoo Module',
+        category: 'odoo',
+        version: 'Odoo 19',
+        status: 'In Development',
+        role: 'Odoo Developer',
+        client: null,
+        description: 'Custom school module with a student model, with teacher management being added next.',
+        highlights: [],
+        tags: ['Python', 'XML'],
+        link: null,
+        image: null,
+        icon: 'fas fa-school'
+    },
+    {
+        id: 'odoo-whatsapp-crm',
+        title: 'WhatsApp–Odoo CRM Integration',
+        subtitle: 'Odoo 19 Enterprise (On-Premise) Client Project',
+        category: 'odoo',
+        version: 'Odoo 19',
+        status: 'Completed', // TODO: confirm — brief did not specify Completed vs In Development
+        role: 'Odoo Consultant',
+        client: 'Trading company, KSA',
+        description: 'Client project connecting WhatsApp to Odoo CRM, with a lead follow-up workflow and an end-to-end CRM-to-Sales process.',
+        highlights: [
+            'WhatsApp-to-Odoo lead capture and follow-up workflow',
+            'End-to-end CRM → Quotation → Sales process',
+            'Quotation templates and product/pricing setup'
+        ],
+        tags: ['CRM', 'Sales', 'Integration'],
+        link: null,
+        image: null,
+        icon: 'fab fa-whatsapp'
+    },
+
     // ---------- PRODUCTS ----------
     {
         id: 'routewings',
@@ -109,25 +210,6 @@ const PROJECTS = [
     },
 
     // ---------- ERP & POS ----------
-    {
-        id: 'odoo-whatsapp-crm',
-        title: 'Odoo 19 WhatsApp CRM Integration',
-        subtitle: 'Odoo 19 Enterprise (On-Premise)',
-        category: 'erp-pos',
-        status: 'In Development',
-        role: 'Odoo Consultant',
-        client: 'Trading company, KSA',
-        description: 'Odoo 19 Enterprise (on-premise) implementation connecting WhatsApp conversations directly to the CRM and sales pipeline.',
-        highlights: [
-            'WhatsApp-to-Odoo lead capture and follow-up workflow',
-            'End-to-end CRM → Quotation → Sales process',
-            'Optimised quotation templates and product/pricing structure'
-        ],
-        tags: ['Odoo 19', 'CRM', 'WhatsApp', 'Sales Automation'],
-        link: null,
-        image: null,
-        icon: 'fab fa-whatsapp'
-    },
     {
         id: 'restaurant-pos',
         title: 'Multi-branch Restaurant POS Implementation',
